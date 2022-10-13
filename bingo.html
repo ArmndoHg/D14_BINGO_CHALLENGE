@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bingo.css">
+    <title>Bingo!</title>
+</head>
+<body>
+    <h1>BINGO CARD BOARD</h1>
+    <div id="bingo">
+        <div id="numbers">
+            <div class="onebyOne">1</div>
+            <div class="onebyOne">2</div>
+            <div class="onebyOne">3</div>
+            <div class="onebyOne">4</div>
+            <div class="onebyOne">5</div>
+            <div class="onebyOne">6</div>
+            <div class="onebyOne">7</div>
+            <div class="onebyOne">8</div>
+            <div class="onebyOne">9</div>
+            <div class="onebyOne">10</div>
+            <div class="onebyOne">11</div>
+            <div class="onebyOne">12</div>
+            <div class="onebyOne">13</div>
+            <div class="onebyOne">14</div>
+            <div class="onebyOne">15</div>
+            <div class="onebyOne">16</div>
+            <div class="onebyOne">17</div>
+            <div class="onebyOne">18</div>
+            <div class="onebyOne">19</div>
+            <div class="onebyOne">20</div>
+            <div class="onebyOne">21</div>
+            <div class="onebyOne">22</div>
+            <div class="onebyOne">23</div>
+            <div class="onebyOne">24</div>
+            <div class="onebyOne">25</div>
+            <div class="onebyOne">26</div>
+            <div class="onebyOne">27</div>
+            <div class="onebyOne">28</div>
+            <div class="onebyOne">29</div>
+            <div class="onebyOne">30</div>
+            <div class="onebyOne">31</div>
+            <div class="onebyOne">32</div>
+            <div class="onebyOne">33</div>
+            <div class="onebyOne">34</div>
+            <div class="onebyOne">35</div>
+            <div class="onebyOne">36</div>
+            <div class="onebyOne">37</div>
+            <div class="onebyOne">38</div>
+            <div class="onebyOne">39</div>
+            <div class="onebyOne">40</div>
+            <div class="onebyOne">41</div>
+            <div class="onebyOne">42</div>
+            <div class="onebyOne">43</div>
+            <div class="onebyOne">44</div>
+            <div class="onebyOne">45</div>
+            <div class="onebyOne">46</div>
+            <div class="onebyOne">47</div>
+            <div class="onebyOne">48</div>
+            <div class="onebyOne">49</div>
+            <div class="onebyOne">50</div>
+            <div class="onebyOne">51</div>
+            <div class="onebyOne">52</div>
+            <div class="onebyOne">53</div>
+            <div class="onebyOne">54</div>
+            <div class="onebyOne">55</div>
+            <div class="onebyOne">56</div>
+            <div class="onebyOne">57</div>
+            <div class="onebyOne">58</div>
+            <div class="onebyOne">59</div>
+            <div class="onebyOne">60</div>
+            <div class="onebyOne">61</div>
+            <div class="onebyOne">62</div>
+            <div class="onebyOne">63</div>
+            <div class="onebyOne">64</div>
+            <div class="onebyOne">65</div>
+            <div class="onebyOne">66</div>
+            <div class="onebyOne">67</div>
+            <div class="onebyOne">68</div>
+            <div class="onebyOne">69</div>
+            <div class="onebyOne">70</div>
+            <div class="onebyOne">71</div>
+            <div class="onebyOne">72</div>
+            <div class="onebyOne">73</div>
+            <div class="onebyOne">74</div>
+            <div class="onebyOne">75</div>
+            <div class="onebyOne">76</div>
+        </div>
+        <div>
+            <input onclick="randomNumber()" id="randomButton" type="button" value="Random Number"/>
+        </div>
+         <div id="newRandomNumber">
+            <h2></h2>
+        </div>
+    </div>
+
+
+    <script>
+        const randomNumber = function () {
+        const randomNodo = document.getElementById("newRandomNumber");
+        const randNum = Math.round(Math.random() * 77);
+        randomNodo.append(randNum)
+        return null;
+      };
+    </script>
+</body>
+</html>

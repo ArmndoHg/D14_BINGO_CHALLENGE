@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+#bingo{ 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.onebyOne{
+    display: inline-block;
+    background-color: rgb(102, 97, 107);
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:xx-large;
+    color: beige;
+    margin-top: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
