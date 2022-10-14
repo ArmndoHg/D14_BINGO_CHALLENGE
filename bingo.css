@@ -9,8 +9,16 @@ body{
     
 }
 
+.center {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
 .oneByOne{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(102, 97, 107);
     width: 80px;
     height: 80px;
@@ -19,7 +27,6 @@ body{
     margin-top: 5px;
     margin-right: 5px;
     border: 2px solid rgb(49, 47, 47);
-    text-align: center;
 }
 
 h1{
@@ -32,9 +39,11 @@ h1{
 }
 
 #randomButton{
+    margin-top: 5px;
     height: 50px;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    width: 250px;
 }
 
 #newRandomNumber{

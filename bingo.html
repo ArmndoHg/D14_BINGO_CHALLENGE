@@ -10,10 +10,10 @@
 <body>
     <h1>BINGO CARD BOARD</h1>
     <div id="bingo">
-        <div class="numbers">
+        <div class="numbers center">
         </div>
         <div>
-            <input id="randomButton" type="button" value="Random Number"/>
+            <input id="randomButton" class="center" type="button" value="Random Number"/>
         </div>
          <div id="newRandomNumber">
             <h2></h2>
@@ -49,7 +49,7 @@
             const newRandomNumber = document.getElementById('newRandomNumber')
             newRandomNumber.innerText = random;
             const cells = document.querySelectorAll(".numbers .oneByOne")
-            cells[random].classList.add("board")
+            cells[random -1].classList.add("board")
         }
 
         window.onload = function(){
