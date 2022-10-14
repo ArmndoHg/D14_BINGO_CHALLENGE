@@ -1,10 +1,12 @@
 body{
     margin: 0;
+    background-color: rgb(99, 61, 61);
 }
 
 #bingo{ 
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10em;
+    margin-right: 10em;
+    
 }
 
 .oneByOne{
@@ -12,15 +14,31 @@ body{
     background-color: rgb(102, 97, 107);
     width: 80px;
     height: 80px;
-    margin-left: auto;
-    margin-right: auto;
     font-size:xx-large;
     color: beige;
     margin-top: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(49, 47, 47);
+    text-align: center;
 }
 
 h1{
     text-align: center;
+    color: beige;
 }
 
+.board{
+    background-color: rgb(231, 117, 36);
+}
 
+#randomButton{
+    height: 50px;
+    display: flex;
+    align-content: center;
+}
+
+#newRandomNumber{
+    font-size: xx-large;
+    color: beige;
+    text-align: center;
+}

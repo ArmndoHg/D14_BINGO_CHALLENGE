@@ -37,27 +37,27 @@
              return arr
         }
 
-        const conectionRandom = function(numbers){
-            const rndmIndex = Math.floor(Math.random() *  numbers.lenght)
-            const random = numbers[rndmIndex]
-            numbers.splice(rndmIndex,1)
+        const conectionRandom = function(range){
+            const rndmIndex = Math.floor(Math.random() * range.length);
+            const random = range.splice(rndmIndex, 1)[0]
             return random;
         }
 
 
-        const randomNumber = function(numbers){
-            const random = conectionRandom(numbers)
+        const randomNumber = function(range){
+            const random = conectionRandom(range)
             const newRandomNumber = document.getElementById('newRandomNumber')
             newRandomNumber.innerText = random;
+            const cells = document.querySelectorAll(".numbers .oneByOne")
+            cells[random].classList.add("board")
         }
-
 
         window.onload = function(){
             generateBoard();
             const randomButton = document.getElementById('randomButton')
-            const numbers = fillArray ()
+            const range = fillArray ()
             randomButton.addEventListener('click', function(){
-                randomNumber(numbers)
+                randomNumber(range)
 
             })
         }
